@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2><i class="fas fa-chalkboard-teacher"></i> Teacher Dashboard</h2>
+        <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="dashboard">
+        <div class="content">
+            <!-- Quiz Creation Section -->
+            <div class="card">
+                <i class="fas fa-file-alt card-icon"></i>
+                <h3>Create Quiz</h3>
+                <input type="text" id="quizQuestion" placeholder="Enter question">
+                <button onclick="createQuiz()">Add Question</button>
+            </div>
+
+            <!-- Assignment Creation Section -->
+            <div class="card">
+                <i class="fas fa-book card-icon"></i>
+                <h3>Assignments</h3>
+                <input type="text" id="assignmentTitle" placeholder="Enter assignment title">
+                <button onclick="createAssignment()">Create Assignment</button>
+            </div>
+
+            <!-- Feedback Form Creation Section -->
+            <div class="card">
+                <i class="fas fa-comments card-icon"></i>
+                <h3>Create Feedback Form</h3>
+                <input type="text" id="feedbackQuestion" placeholder="Enter feedback question">
+                <button onclick="addFeedbackQuestion()">Add Question</button>
+                <ul id="feedbackList"></ul> <!-- Display added questions -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/teacher.js"></script>
+</body>
+</html>

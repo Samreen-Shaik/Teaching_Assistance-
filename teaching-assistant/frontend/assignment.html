@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/assignment.css">
+</head>
+<body>
+    <div class="dashboard">
+        <nav>
+            <h2><i class="fas fa-book"></i> Assignment</h2>
+            <button class="logout-btn" onclick="goBack()">Back</button>
+        </nav>
+        <div class="content">
+            <p>Write your assignment here.</p>
+            <textarea id="assignmentText" rows="5" placeholder="Type your assignment..."></textarea>
+            <button onclick="submitAssignment()"><i class="fas fa-upload"></i> Submit Assignment</button>
+        </div>
+    </div>
+    <script>
+        function submitAssignment() {
+            alert("Assignment Submitted Successfully!");
+        }
+        function goBack() {
+            window.location.href = "student-dashboard.html";
+        }
+    </script>
+</body>
+</html>

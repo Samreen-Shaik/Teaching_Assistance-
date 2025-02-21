@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <button class=<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Student Dashboard</title>
+                <link rel="stylesheet" href="css/styles.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- Font Awesome -->
+            </head>
+            <body>
+                <div class="dashboard">
+                    <nav>
+                        <div class="nav-left">
+                            <h2><i class="fas fa-user-graduate"></i> Student Dashboard</h2>
+                        </div>
+                        <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                    </nav>
+            
+                    <div class="content">
+                        <div class="card" onclick="openPage('quiz.html')">
+                            <i class="fas fa-question-circle card-icon"></i>
+                            <h3>Quizzes</h3>
+                            <p>Attempt quizzes assigned by the teacher.</p>
+                        </div>
+            
+                        <div class="card" onclick="openPage('assignment.html')">
+                            <i class="fas fa-book card-icon"></i>
+                            <h3>Assignments</h3>
+                            <p>Write and submit your assignments online.</p>
+                        </div>
+            
+                        <div class="card" onclick="openPage('feedback.html')">
+                            <i class="fas fa-comments card-icon"></i>
+                            <h3>Feedback</h3>
+                            <p>Give feedback about your learning experience.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <script src="js/student.js"></script>
+            </body>
+            </html>
+            "logout-btn">Logout</button>
+        <h2>Student Dashboard</h2>
+        
+        <div class="dashboard">
+            <div class="icon-box">
+                <i class="fas fa-file-alt icon"></i>
+                <span class="icon-text">Assignments</span>
+            </div>
+            
+            <div class="icon-box">
+                <i class="fas fa-question-circle icon"></i>
+                <span class="icon-text">Quizzes</span>
+            </div>
+            
+            <div class="icon-box">
+                <i class="fas fa-comment-dots icon"></i>
+                <span class="icon-text">Feedback</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
